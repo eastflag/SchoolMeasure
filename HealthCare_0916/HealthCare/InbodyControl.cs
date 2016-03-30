@@ -2173,6 +2173,18 @@ namespace HealthCare
         {
             try
             {
+                if (grade.Contains("5세")) {
+                    return "-3";
+                }
+                if (grade.Contains("6세"))
+                {
+                    return "-2";
+                }
+                if (grade.Contains("7세"))
+                {
+                    return "-1";
+                }
+
                 int gradeID = int.Parse(grade);
 
                 if (gubun2.StartsWith("중학"))
