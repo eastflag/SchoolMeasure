@@ -2173,7 +2173,16 @@ namespace HealthCare
         {
             try
             {
-                if (grade.Contains("5세")) {
+                if (grade.Contains("3세"))
+                {
+                    return "-5";
+                }
+                if (grade.Contains("4세"))
+                {
+                    return "-4";
+                }
+                if (grade.Contains("5세"))
+                {
                     return "-3";
                 }
                 if (grade.Contains("6세"))
